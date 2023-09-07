@@ -12,6 +12,7 @@ export default function PriceFilter() {
   const queryParams = useQueryParams()
   const navigate = useNavigate()
   const { handleTextLanguage } = useAppContext()
+
   const schema = yub.object().shape({
     start: yub
       .number()
@@ -49,7 +50,7 @@ export default function PriceFilter() {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
   })
   const handleValueSubmit = (values: { start: number; end: number }) => {
-    const { handleTextLanguage } = useAppContext()
+    // console.log(values)
     const newQueryParams = { ...queryParams, price_max: values.end, price_min: values.start, page: 1 }
     const result = new URLSearchParams(newQueryParams as any).toString()
     navigate(`?${result}`)

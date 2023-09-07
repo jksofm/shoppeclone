@@ -81,7 +81,7 @@ export default function FormProfile() {
       const formError = error.response?.data.data
       // console.log(formError)
       if (formError) {
-        console.log(Object.keys(formError))
+        // console.log(Object.keys(formError))
         Object.keys(formError).forEach((key) => {
           setError(key as keyof FormDataError, {
             message: formError[key as keyof FormDataError],
@@ -104,7 +104,7 @@ export default function FormProfile() {
             avatar: `${data.data.data}`
           }
           setValue('avatar', `${data.data.data}`)
-          console.log(newValues)
+          // console.log(newValues)
           updateProfileMutation.mutate(newValues, {
             onSuccess: () => {
               toast.success('Cập nhật thông tin thành công!')
@@ -117,7 +117,7 @@ export default function FormProfile() {
           })
         },
         onError: (error) => {
-          console.log(error)
+          // console.log(error)
           if (
             isAxiosUnprocessableEntityError<{
               data: {

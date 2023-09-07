@@ -73,7 +73,7 @@ export const refreshToken = async () => {
   const refresh_token = localStorage.getItem('refresh_token') as string
   try {
     const res = await refreshAccessToken({ refresh_token })
-    console.log(res)
+    // console.log(res)
     const { access_token } = res.data.data
     localStorage.setItem('access_token', access_token)
     return access_token

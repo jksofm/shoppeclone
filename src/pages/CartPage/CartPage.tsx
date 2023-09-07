@@ -56,7 +56,7 @@ export default function CartPage() {
             price_before: item.price_before_discount
           }
         })
-        console.log(newArr)
+        // console.log(newArr)
         setProductsChoose(newArr)
       } else {
         const newArr: {
@@ -144,7 +144,7 @@ export default function CartPage() {
   const totalDiscount = totalMoney - totalMoneyBefore
 
   const handleCheckedAll = (value: boolean) => {
-    console.log(value)
+    // console.log(value)
     setProductsChoose((prev) => {
       // console.log(prev)
       const newArr = prev.map((item) => {

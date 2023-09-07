@@ -110,9 +110,9 @@ export default function ProductItemCartPage({
 
   useEffect(() => {
     if (countProduct !== data.buy_count) {
-      console.log('debounce')
+      // console.log('debounce')
       if (countProduct <= data.product.quantity && countProduct > 0) {
-        console.log('tesss')
+        // console.log('tesss')
         handleUpdateCart(countProduct)
       }
       if (countProduct === 0) {
@@ -128,8 +128,8 @@ export default function ProductItemCartPage({
   useEffect(() => {
     // console.log('prev', productsChoose)
     if (data.buy_count !== countProduct) {
-      console.log('countProduct', countProduct)
-      console.log('buy_count', data.buy_count)
+      // console.log('countProduct', countProduct)
+      // console.log('buy_count', data.buy_count)
       setProductsChoose(
         produce((draft) => {
           const index = productsChoose.findIndex((item) => item.product_id === data.product._id)
@@ -145,7 +145,7 @@ export default function ProductItemCartPage({
     const newArr = productsChoose.filter((item) => item.checked === true)
 
     if (newArr.length === productsChoose.length && newArr.length > 0) {
-      console.log('productsChoose')
+      // console.log('productsChoose')
       setCheckedAll(true)
     }
     if (newArr.length !== productsChoose.length && newArr.length >= 0) {

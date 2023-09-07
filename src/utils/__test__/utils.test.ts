@@ -57,7 +57,7 @@ describe('saveAccessToken', () => {
 })
 describe('RefreshToken', () => {
   beforeEach(() => {
-    console.log('beforeEach')
+    // console.log('beforeEach')
   })
   it('is refresh_token được set vào localStorage', () => {
     // để gọi được localstorage trong vitest thì ta phải chuyển môi trường bằng thư viên jsdom

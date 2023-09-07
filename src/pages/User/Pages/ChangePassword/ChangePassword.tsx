@@ -55,7 +55,7 @@ export default function ChangePassword() {
     resolver: yupResolver(schema as any)
   })
   const onSubmit = (values: formDataPassword) => {
-    console.log(values)
+    // console.log(values)
     updatePasswordMutation.mutate(
       { new_password: values.new_password, password: values.password },
       {
@@ -66,7 +66,7 @@ export default function ChangePassword() {
           setValue('new_password', ''), setValue('password', '')
         },
         onError: (errors) => {
-          console.log(errors)
+          // console.log(errors)
         }
       }
     )

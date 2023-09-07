@@ -45,7 +45,7 @@ class Http {
     )
     this.instance.interceptors.response.use(
       (response) => {
-        console.log(this.accessToken)
+        // console.log(this.accessToken)
         // console.log(response)
         const { url } = response.config
 

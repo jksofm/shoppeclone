@@ -88,7 +88,7 @@ export default function CategoryFilter({
                 </svg>
               )}
               <Link className='' to={pathRoute.home}>
-                {handleTextLanguage(item.name)}
+                {handleTextLanguage(item.name as any)}
               </Link>
             </li>
           )

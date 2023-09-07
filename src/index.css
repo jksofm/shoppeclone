@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --toastify-text-color-success: #ee4d2d !important;
+  --toastify-color-success: #ee4d2d;
+  --toastify-color-progress-success: var(--toastify-color-success);
+}
+.Toastify__toast-icon {
+  color: #ee4d2d !important;
+}
+.Toastify__progress-bar--success {
+  color: #ee4d2d !important;
+}
+html {
+  height: 100%;
+  line-height: 1.2;
+}
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}

@@ -63,10 +63,10 @@ export default function LoginPage(props: LoginPageProps) {
   }
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title className='title'>Login Page | Shoppee</title>
         <meta name='description' content='Helmet application' />
-      </Helmet>
+      </Helmet> */}
       <div
         style={{
           backgroundImage: `url(${bg})`,

@@ -37,7 +37,7 @@ export default function SortProductList({
       setSortByPrice('')
       navigate(`?${result}`)
     }
-  }, [navigate, queryParams, sortBy, sortByPrice])
+  }, [sortBy, sortByPrice])
 
   return (
     <div className='bg-gray-300/40 py-4 px-3'>

@@ -40,10 +40,10 @@ export default function ProductListPage(props: ProductListPageProps) {
   }
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title className='title'>Home Page | Shoppee</title>
         <meta name='description' content='Helmet application' />
-      </Helmet>
+      </Helmet> */}
       <div className='bg-gray-200 py-6'>
         <div className='container'>
           <div className='grid grid-cols-12 gap-6'>
